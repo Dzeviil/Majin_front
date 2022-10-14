@@ -5,7 +5,7 @@
         <form method="POST" class="flex w-[25rem] flex-col space-y-9 bg-gray-800  rounded-lg ">
         
             <div class="bg-gray-800 px-6 py-6 rounded shadow-md text-white w-full space-y-6">
-                <div v-on:click="closepopup()" class=" flex justify-end cursor-pointer z-50">
+                <div @click="router.push({ name: 'home' })" class=" flex justify-end cursor-pointer z-50">
                     <svg class="fill-current text-gray-500" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
                         viewBox="0 0 18 18">
                         <path
@@ -46,7 +46,7 @@
                 </div>
                 <div class="text-grey-dark mt-6">
                     Tu as déjà un compte?
-                    <a v-on:click="showloginpopup()" class="no-underline  text-indigo-500" href="#">
+                    <a @click="router.push({ name: 'login' })" class="no-underline  text-indigo-500" href="#">
                         Connecte toi
                     </a>.
                 </div>

@@ -4,7 +4,7 @@
     <main  class=" absolute mx-auto flex min-h-full w-full items-center justify-center bg-transparent text-white z-50 backdrop-blur">
         <!-- component -->
         <form method="POST" class="flex w-[25rem] flex-col space-y-9 bg-gray-800 p-4 rounded-lg ">
-            <div v-on:click="closepopup()"  class=" flex justify-end cursor-pointer z-50">
+            <div @click="router.push({ name: 'home' })"  class=" flex justify-end cursor-pointer z-50">
                 <svg class="fill-current text-gray-500" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
                     viewBox="0 0 18 18">
                     <path
@@ -36,7 +36,7 @@
 
             <p class="text-center text-lg">
                 Pas de compte?
-                <a v-on:click="showinscriptionpopup()" href="#" class="font-medium text-indigo-500 underline-offset-4 hover:underline mx-2">Créer un
+                <a @click="router.push({ name: 'inscription' })"  href="#" class="font-medium text-indigo-500 underline-offset-4 hover:underline mx-2">Créer un
                     compte</a>
             </p>
         </form>
@@ -46,47 +46,7 @@
 </template>
 
 <script>
-import InscriptionComp from '@/components/InscriptionComp.vue';
 
-
-
-export default {
-    name: 'NavbarComp',
-    components: {
-        InscriptionComp,
-    },
-    data(){
-        return{
-            active: false,
-            inscriptionpopup:false,
-            loginpopup:false,
-            
-        }
-    },
-    methods:{
-        closepopup(){
-            this.active=true
-            this.loginpopup=false
-            this.inscriptionpopup=false
-            console.log(this.active)
-        },
-        showloginpopup(){
-            this.active=true
-            this.loginpopup=true
-            this.inscriptionpopup=false
-            console.log(this.active)
-        },
-        showinscriptionpopup(){
-            this.active=true
-            this.loginpopup=false
-            this.inscriptionpopup=true
-            console.log(this.active)
-        }
-
-
-    }
-
-}
 </script>
 
 <style>
