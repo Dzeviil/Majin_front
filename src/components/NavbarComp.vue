@@ -4,11 +4,11 @@
         <nav class=" bg-white w-full flex relative justify-between items-center mx-auto md:px-8 px-2 md:h-16 h-10">
             <!-- logo -->
             <div class="inline-flex ">
-                <a class="_o6689fn" href="/Details">
+                <div class="_o6689fn">
                     <div class="">
                         <img class="object-cover h-14 " src="@/assets/logo_app.png" alt="">
                     </div>
-                </a>
+                </div>
             </div>
 
             <!-- end logo -->

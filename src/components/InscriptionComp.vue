@@ -18,7 +18,7 @@
 
                 <div
                     class="w-full transform border-b-2 bg-transparent text-lg duration-300 focus-within:border-indigo-500 ">
-                    <input type="text" placeholder="Email"
+                    <input type="text" placeholder="Emaili"
                         class="w-full border-none bg-transparent outline-none placeholder:italic focus:outline-none px-2" />
                 </div>
 
