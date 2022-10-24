@@ -28,7 +28,7 @@
          <div class="flex items-center ml-10">
             <span>
                <small v-for="listetag in jeu.listeTags" v-bind:key="listetag.id"
-                  class="  inline-flex items-center px-3 mx-1 rounded text-xs font-medium leading-4 text-white" :style="{
+                  class="  inline-flex items-center px-3 mx-3 rounded text-xs font-medium leading-4 text-white" :style="{
                      backgroundColor: `${listetag.tags.couleur}`
                   }">{{ listetag.tags.nom }}</small>
                <strong class="mb-1 w-full flex items-center gap-2 mt-2">
